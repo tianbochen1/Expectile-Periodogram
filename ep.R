@@ -1,3 +1,4 @@
+#compute the expectile periodogram
 expectile_peri_ls <- function(y, f, tau, n.cores=1) {
   ep.parallel1<-function(yy,ff,tau,tt) {
     ntau = length(tau)
@@ -34,6 +35,7 @@ expectile_peri_ls <- function(y, f, tau, n.cores=1) {
   out
 }
 
+#normalize the result
 spec.normalize<-function(qper) {
   if(is.matrix(qper)) {
     return( apply(qper,2,FUN=function(x) { x/sum(x) }) )
