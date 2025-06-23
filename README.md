@@ -5,4 +5,9 @@ This paper introduces a novel periodogram-like function, called the expectile pe
 One can download the code and data to reproduce the results in the following paper:
 [1] Chen, T. (2024). Expectile Periodograms. arXiv preprint arXiv:2403.02060.
 
+ep.r contains functions to compute the expectile periodogram.
+simu.r repoduces the results in the simulations.
+ep.py repoduces the results in the earthquake data classification (download the data from https://drive.google.com/file/d/1u1gHarQinYWFAvXO0f5radzSEOGuhTQ9/view?usp=drive_link before running).
+
+
 For further inqueries, please contact Tianbo Chen (chentianbo@ahu.edu.cn)
