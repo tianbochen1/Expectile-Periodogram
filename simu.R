@@ -3,6 +3,7 @@ source('ep.R')
 library(fGarch)
 library(quantreg)
 library(expectreg)
+library(fields)
 ncores = 2
 tau=(5:95)/100
 
