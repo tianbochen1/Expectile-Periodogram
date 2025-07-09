@@ -1,6 +1,5 @@
 # simulation
-source('fnexpectile.R')
-source('fnquantile.R')
+source('ep.R')
 library(fGarch)
 library(quantreg)
 library(expectreg)
@@ -79,7 +78,7 @@ image.plot((30:120)/3000, tau ,ep[30:120,] ,xaxt="n",yaxt="n",xlab='',ylab='')
 axis(side = 1, tck = -0.02) ;axis(side = 2, tck = -0.02)
 title(xlab="Freq (cycles per ms)",ylab="Expectile", line=2, cex.lab=1.2)
 
-#####################sp
+#####################sp500 example
 tau=(5:95)/100
 data = read.csv('sp.csv')
 data = data$Close[14540:22103]
@@ -163,7 +162,7 @@ axis(side = 1, tck = -0.02) ;axis(side = 2, tck = -0.02)
 title(xlab="Freq",ylab="Expectile", line=2, cex.lab=1.2)
 
 
-##MIX
+##mixture example
 s = 5000
 n = 200
 tau = (5:95)/100
