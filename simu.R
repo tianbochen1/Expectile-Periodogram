@@ -298,7 +298,7 @@ title(xlab="Freq",ylab="Expectile", line=2, cex.lab=1.2)
 
 
 omegac = 2*pi*0.3
-k = 500
+k = 1000
 set.seed(1)
 ep_ima30 = 0
 for (i in 1:k){
@@ -345,7 +345,7 @@ n = 200
 tau = c(0.85,0.9,0.95)
 ncores = 2
 g = rep(0,24)
-k = 1000
+k = 5000
 set.seed(2)
 for (i in 1:k){
   xt =  as.numeric(arima.sim(list(order=c(2,0,0),ar=c(2*r*cos(omegac),-r^2),sd=1),n=n))
