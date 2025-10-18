@@ -87,12 +87,12 @@ data = diff(log(data))
 ep1 = EP_est(data, 0.025, tau, 8)
 
 pg = (1/length(data))*(abs(fft(data)[2:190]))^2
-pgsmo = smooth.spline(pg,spar=0.8)$y
+pgsmo = smooth.spline(pg,cv=T)$y
 pgsmo = pgsmo/sum(pgsmo)
 ep = spec.normalize(ep1$qp)
 epsmo = ep
 for(i in 1:91){
-  epsmo[,i] = smooth.spline(ep[,i],spar=0.8)$y
+  epsmo[,i] = smooth.spline(ep[,i],cv=T)$y
 }
 epsmo = spec.normalize(epsmo)
 
@@ -395,5 +395,6 @@ for (i in 1:k){
   g[24] = g[24] + (pfish(pg) < 0.1)
   print(i)
 }
+
 
 
