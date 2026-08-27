@@ -17,3 +17,5 @@ Data:
 For further inquiries, please contact Tianbo Chen (chentianbo@ahu.edu.cn).
 
 # Expectile-series
+
+This paper introduces the expectile series (ESER), a level-specific time-domain representation of expectile-frequency dependence obtained by Fourier inversion of the expectile discrete Fourier transform (EDFT). The ESER complements the expectile periodogram (EP) by translating frequency--expectile information into a family of time-domain series that retains the magnitude-sensitive nature of expectile regression. Several finite-sample and asymptotic properties of the ESER and the EP are established. Simulation studies show that the ESER can reveal level-specific periodic structures and retain information on the magnitude of deviations, and illustrate smoother level-indexed behavior than the corresponding quantile-based representations. An application to Paderborn bearing vibration data illustrates how the ESER and EP jointly characterize fault-related temporal and spectral structures. The proposed framework provides a time-domain complement to expectile-based spectral analysis.
