@@ -15,3 +15,5 @@ Data:
 3.  "ep500.csv", earthquake data.   (download the data from https://drive.google.com/file/d/1u1gHarQinYWFAvXO0f5radzSEOGuhTQ9/view?usp=drive_link before running)
 
 For further inquiries, please contact Tianbo Chen (chentianbo@ahu.edu.cn).
+
+# Expectile-series
